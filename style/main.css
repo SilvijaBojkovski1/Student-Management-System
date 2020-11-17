@@ -1,0 +1,818 @@
+html{
+       width: 100%;
+       height: 100%;
+       overflow: hidden;
+}
+
+body{
+       margin:0px;
+       padding:0px;
+       display: flex;
+       /*align-items: stretch;*/
+       font-family: 'Roboto', sans-serif;
+       font-weight: 300;
+       font-size: 16px;
+       background-size: cover;
+       overflow: hidden;
+}
+*{
+       box-sizing: border-box;
+}
+         
+
+main {
+       flex:80%;
+       padding-left:20px;
+       /*background-color:#EBEBEB;*/
+       display:block;
+       
+}
+
+.main-title{
+       font-size: 30px;
+       font-family: 'Cormorant Garamond', serif;
+       margin:20px 30px;
+}
+/*HEADER-------------------------------------------------------------------------------*/
+.header-container{
+      display: flex; 
+      justify-content: space-between;
+      width:100%;
+      align-items: center;
+      background-color: #204364;
+      color: white;
+      padding: 10px 20px 10px 20px;
+      height: fit-content;
+}
+.header-logo{
+       flex:20%;
+       font-family: 'Cormorant Garamond', serif;
+       text-align: center;
+}
+.header-logo img{
+       width:120px;
+       float: right;
+       padding-right:50px;
+}
+
+.college{
+       font-size: 30px;
+}
+.college-info{
+       font-size: 20px;
+}
+.header-title{
+       flex:80%;
+}
+.header-title p{
+       font-size: 30px;
+       margin:0px;
+}
+
+
+
+/*INDEX PAGE-----------------------------------------------------------------------------*/
+.login-form{
+       margin:0 auto;
+       margin-top: 20vh;
+       width:20%;
+       /*background-color: #A3C9D9;*/
+       background-color: RGBA(224,223,224,0.5);
+       padding:0;
+       border-radius: 25px;
+       height: 290px;
+}
+.login-register{
+       display: flex;
+       margin-bottom:15px;
+}
+
+#login{
+       flex: 50%;
+       border-radius: 25px 0 10px 0;
+       padding: 0 20px 0 20px;
+}
+
+.login-register h2{
+       margin-top:20px;
+       text-align: center;
+       color:rgba(115,115,115,0.8);
+}
+/*#register{
+       flex: 50%;
+       margin: 0;
+       padding:0;
+       border-radius: 0 25px 0 10px;
+       padding: 0 20px 0 20px;
+}
+
+#register h2{
+       margin:0;
+}*/
+
+.login-register a{
+       text-decoration: none;
+}
+
+.color-back{
+       background-color: #80645B;
+}
+.login-form form{
+       display: flex;
+       flex-direction: column; 
+}
+
+
+#hide{
+       display: none;
+}
+
+::placeholder{
+       color:rgba(0, 0, 0,0.4);
+}
+
+.input-f input:hover{
+       background-color: rgba(0, 0, 0, 0.1);
+       border-radius: 5px;
+       
+}
+.input-f{
+       display: flex;
+       align-items: center;
+       padding: 0 20px 0 20px;
+}
+.input-f img{
+       width:20px;
+       height: 20px;
+       margin-right:10px;
+}
+.input-f input{
+       width:100%;
+       color:black;
+       font-size: 16px;
+       border:none;
+       border-bottom:1px solid rgba(115,115,115,0.5);
+       background-color: rgba(255,255,255,0);
+       height: 40px;
+       margin:10px 0 5px 0;
+       color:rgba(115,115,115,0.8);
+       outline:none;
+}
+
+.info-input{
+       color:white;
+}
+.input-f-margin input{
+margin-bottom:100px;
+}
+
+
+.submit-bttn{
+       padding: 0 20px 0 20px;
+       margin-top:30px;
+       margin-bottom:30px;
+       color:#634E47;
+}
+
+.submit-bttn input{
+       padding: 0 20px 0 20px;
+       width:100%;
+       border-radius: 5px;
+       border:none;
+       color:rgba(99, 78, 71);
+       border: 1px solid rgba(115,115,115,0.8);
+       height: 40px;
+
+}
+.submit-bttn:hover{
+font-size: 14px;
+}
+/*SIDEBAR------------------------------------------------------------------------------*/
+.sidebar{
+       display: flex;
+       width:300px;
+       flex-direction: column;
+       height: 100vh;
+       color:white;
+}
+.sidebar-profile{
+       display: flex;
+       align-items: center;
+       padding-left:30px;
+       align-self: flex-start;
+       background-color: #204364;
+       
+}
+
+.sidebar-profile-pic{
+       margin: 20px 0 20px 0;
+       width:20%;
+       margin-right: 30px;
+}
+.sidebar-profile-pic img{
+       width:100%;
+       border: 2px solid white;
+       border-radius: 50%;
+}
+
+.welcome, #sidebar-name{
+       letter-spacing: 1px;
+       padding-bottom:0px;
+       margin:3px;
+}
+
+.welcome {
+       font-size: 14px;
+}
+
+.sidebar-activities{
+       flex:60%;
+       background-color: #204364;
+}
+
+.sidebar-activities ul{
+       list-style: none;
+       padding:0px;
+       margin-top:30px;
+}
+.sidebar-activities ul li{
+       padding: 15px 0 15px 30px;
+       display: flex;
+       align-items: center;
+}
+.sidebar-activities ul li img{
+       padding-right:10px;
+}
+
+.sidebar-activities ul li:hover{
+       background-color: #1B3854;
+       border-right: 8px solid#14293D;
+}
+
+.sidebar-options ul{
+       list-style: none;
+       padding: 15px 30px 15px 30px;
+       background-color: #1B3854;
+       margin:0px;
+}
+
+ul li a{
+       text-decoration: none;
+       color:white;
+}
+
+.logout-popup{
+       width:fit-content;
+       height: auto;
+       position: fixed;
+       top:30vh;
+       left:40vw;
+       padding:30px;
+       border: 1px solid grey;
+       border-radius: 5px;
+       display: none;
+       background-color: white;
+}
+
+.logout-popup p{
+padding-bottom:15px;
+}
+.logout-popup form{
+       display: flex;
+       justify-content: center;
+}
+.logout-popup form button{
+       margin: 15px;
+       border-radius: 5px;
+}
+
+/*PROFILE INFO---------------------------------------------------------------------*/
+.profile-info-container{
+       display:flex;
+       background-color:rgba(57,119,177,0.6);/* #3977B1*/;
+       padding:15px;
+       margin:20px;
+       margin-top:10px;
+       border-radius: 10px;
+       font-weight: 400;
+       font-size: 25px;
+       align-items: center;
+       width:500px;
+       border:2px solid  rgba(57,119,177,0.8);
+}
+
+.profile-info-container img{
+       width:15%;
+       margin-right:20px;
+}
+
+.profile-info-name{
+       margin-bottom:15px;
+}
+
+.profile-info-extra{
+       font-size: 16px;
+}
+
+.profile-info-table{
+       display:flex;
+       margin-left:20px;
+       margin-bottom: 20px;
+       max-width: 500px;
+}
+.profile-info-table th{
+ width:250px;
+ background-color: rgba(57,119,177,0.6);
+ padding-left:5px;
+}
+.profile-info-table td{
+text-align: left;
+width:250px;
+padding-left:5px;
+}
+
+.profile-info-table th img{
+       float: right;
+       width:20px;
+       height:auto;
+}
+
+.change-login-table{
+       display: flex;
+       flex-direction: column;
+       border: 1px solid black;
+       width:500px;
+}
+.change-login-table {
+      margin:20px;
+}
+
+.change-login-table p{
+       margin-bottom:10px;
+       font-size: 20px;
+       margin-left:20px;
+       margin-top:-11px;
+       padding-left:5px;
+       padding-right:5px;
+       padding-bottom:15px;
+       width: fit-content;
+       background-color: #EBEBEB;
+}
+.login-change tr{
+       margin:0px;
+       padding:0px;
+}
+.login-change td{
+       border: none;
+       padding:0px;
+       padding-right:10px;
+}
+.login-change th{
+       border: none;
+       margin-right:10px;
+}
+.login-change table{
+       border: none;
+}
+
+.hide{
+       display: none;
+}
+
+.show{
+       display: table;
+}
+
+#table-login input{
+       border-radius: 5px;
+       margin-bottom:15px;
+}
+
+#table-login label{
+ font-size: 18px;
+ margin:0 15px 15px 25px;
+}
+.table-login-bttn{
+margin-left: 10px;
+padding: 0 10px;
+}
+/*DASHBOARD---------------------------------------------------------------------*/
+.numbers-container{
+       display: flex;
+       color:white;
+       margin-bottom:40px;
+}
+.numbers-section-container{
+       display: flex;
+       background-color: red;
+       margin:15px 15px 0 0;
+       border-radius: 10px;
+       width:300px;
+       padding:20px;
+       justify-content: space-between;
+}
+.color-blue{
+       background-color:#2A5985;
+}
+
+.color-dark{
+       background-color: #3977B1;
+}
+.numbers-section-info{
+       flex:60%;
+}
+.numbers-section-info p{
+      margin:0px;
+      display: flex;
+      flex-direction: column;
+}
+
+.number{
+font-size: 25px;
+font-weight: 500;
+padding-bottom:15px;
+}
+
+.status{
+       font-size: 25px;
+       font-weight: 400;
+}
+.def{
+       font-size: 14px;
+}
+
+.numbers-section-picture{
+        align-self: flex-start;
+       flex:25%;
+}
+.numbers-section-picture img{
+       width:100%;
+       opacity: 60%;
+}
+
+/*NEWS CONTAINER------------------------------------------------------------------*/
+.news-container{
+       display: flex;
+       margin-bottom:100px;
+}
+.news-sub-container{
+       background-color: white;
+       border: 1px solid grey;
+       height:70vh;
+       border-radius: 10px;
+       padding:20px;
+       margin-right:15px;
+       overflow: scroll;
+}
+.news-sub-container h4{
+margin:0px;
+color:#1B3854;
+font-weight: 500;
+}
+.news-section{
+       /*display: flex;*/
+       flex-direction: row-reverse;
+}
+.news-text h3, p{
+       margin:0px;
+       line-height: 20px;
+       
+}
+.news-text h3{
+       color:#1B3854;
+       font-size: 20px;
+       padding-bottom:10px;
+       font-weight: 400;
+}
+
+.date{
+       background-color: #1B3854;
+       float: left;
+       color: white;
+       padding:10px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       border-radius: 5px;
+       margin: 0 15px 15px 0;
+}
+.date-num{
+       font-size: 25px;
+       line-height: 20px;
+       margin:0px;
+       padding:0px;
+}
+.date-month{
+       font-size: 14px;
+       line-height: 15px;
+}
+.width60{
+       width: 60%;
+}
+.width30{
+       width:40%;
+}
+
+
+
+
+/*CLASSES--------------------------------------------------------------*/
+.table-container{
+       padding-left:30px;
+       margin-bottom:50px;
+       height: 90vh; 
+       overflow:scroll;
+}
+
+/*TABLES-----------------------------------------------------------------*/
+table, td,th {
+       border: 1px solid black;
+       border-collapse: collapse;
+}
+
+tr{
+       height: 40px;
+}
+td,th{
+       padding:3px 7px;
+       text-align: left;
+}
+
+th{
+       font-weight: 500;
+}
+
+/*NOTES--------------------------------------------------------------*/
+.notes-container{
+       display: flex;
+       flex-wrap: wrap;
+       
+}
+.notes-page{
+       display: flex;
+       flex-direction: column;
+       margin:30px;
+}
+.make-note-bttn{
+       display: block;
+       width:100%;
+       margin-bottom:20px;
+       display: flex;
+}
+
+.make-note-bttn button{
+       height: 30px;
+       width:150px;
+       text-align: left;
+       font-size: 16px;
+}
+.make-note-bttn img{
+       width:18px;
+       height: auto;
+       float: right;
+}
+.note{
+       background-color: #98A9DD;
+       width:200px;
+       height:250px;
+       display: flex;
+       flex-direction: column;
+       padding:10px;
+       margin-right:20px;
+       margin-bottom:20px;
+       position: relative;
+       height: fit-content;
+       border: 1px solid grey;
+       border-radius: 5px;
+}
+
+.sticky-note-text-change{
+       display: flex;
+       flex-direction: column;
+}
+.sticky-note-text{
+       flex:90%;
+       padding-bottom: 15px;
+       float: left;
+       height: fit-content;
+}
+
+.sticky-note-title h4{
+       font-weight:400;
+       margin:5px 0;
+}
+.note hr{
+       border: 1px solid grey;
+
+}
+
+.note-change{
+       bottom:0;
+       right:5px;
+       flex:10%;
+       position: sticky;
+       bottom:0;
+       width:100%;
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+}
+
+.note-change img{
+       margin:3px;
+}
+
+.note-creator{
+       background-color: white;
+       border: 2px solid grey;
+       border-radius: 5px;
+       width: 400px;
+       height:370px;
+       padding:20px;
+       position: fixed;
+       top:10vh;
+       left:38vw;
+       display: none;
+}
+
+.note-title input{
+       border: 1px solid black;
+       height:30px;
+       width:100%;
+       border-radius: 5px;
+}
+.note-text{
+       height:170px;
+}
+.note-text textarea{
+       height: 170px;
+       resize: none;
+       border: 1px solid black;
+       padding:10px;
+       border-radius: 5px;
+}
+
+.note-save-cancel{
+       display: flex;
+       justify-content: space-between;
+}
+.note-save-cancel input{
+       margin-top:20px;
+}
+
+.note-title-color{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+}
+.note-color select{
+       margin:0px;
+       padding:5px;
+}
+/*ADD EVENT---------------------------------------------------------------------------------*/
+.main-title {
+       height: fit-content;
+}
+.main-content-container{
+       display: flex;
+       flex-direction: column;
+}
+.event-container{
+       display: flex;
+       flex-direction: column;
+       margin:20px 20px;
+       height: fit-content;
+}
+
+.event-title{
+       display: flex;
+       align-items: center;
+}
+
+.event-title, .event-date, .event-details{
+       margin-bottom:10px;
+}
+.event-title label{
+       height: 25px;
+       margin:0px;
+       background-color: rgba(57,119,177,0.4);
+       font-weight: 400;
+}
+
+.event-title input{
+       width: 450px;
+}
+.event-date-type-container{
+       display: flex;
+}
+.event-date{
+       display: flex;
+}
+.event-date input{
+       margin:0px;
+}
+.event-date label{
+       background-color: rgba(57,119,177,0.4);
+       font-weight: 400;
+}
+.event-type{
+       display: flex;
+       margin-left: 50px;
+}
+
+.event-type label{
+       background-color: rgba(57,119,177,0.4);
+       font-weight: 400;
+}
+.event-type select {
+       font-size: 15px;
+       padding:0px;
+       padding-left:10px;
+}
+
+.event-details label{
+      line-height: 30px;
+      font-weight: 400;
+      
+}
+.event-details textarea{
+       resize: none;
+}
+.event-details{
+       border:1px solid grey;
+       border-radius: 5px;
+       padding:3px;
+       background-color: rgba(57,119,177,0.4);
+}
+
+.event-submit-bttn{
+       display: flex;
+       justify-content: space-between;
+}
+.event-submit-bttn input{
+       width: 100px;
+       height: 30px;
+       margin-top:10px;
+}
+.border-left{
+       font-size: 16px;
+       padding: 2px 10px 0 5px;
+       border:1px solid #B5B5B5;
+       border-radius:5px 0 0 5px ;
+       height: 25px;
+       width:60px;
+}
+
+.border-right{
+       border:1px solid #B5B5B5;
+       border-radius: 0 5px 5px 0;
+       padding-left:10px;
+       height: 25px;
+}
+
+/*DELETE EVENT POPUP-------------------------------------------------*/
+.delete-warning{
+       width:fit-content;
+       height: auto;
+       position: fixed;
+       top:30vh;
+       left:40vw;
+       padding:30px;
+       border: 1px solid grey;
+       border-radius: 5px;
+       z-index: 2;
+       background-color: white;
+}
+
+.delete-warning p{
+padding-bottom:15px;
+}
+.delete-warning form{
+       display: flex;
+       justify-content: center;
+}
+.delete-warning form button{
+       margin: 15px;
+       border-radius: 5px;
+}
+
+#warning-bg{
+       position: absolute;
+              width: 100vw;
+             height:100vh;
+              background: rgba(217,217,217,0.7);
+              background-size:cover;
+             z-index: 1;
+}
+
+/*ADD GRADES--------------------------------------------------*/
+.add-grades-container form input,select {
+height:30px;
+margin-bottom:10px;
+}
+
+.sub-title{
+       margin-bottom:20px;
+       font-size: 22px;
+       font-weight: 400;
+}

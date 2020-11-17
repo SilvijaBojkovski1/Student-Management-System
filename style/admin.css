@@ -1,0 +1,161 @@
+
+/*EDIT EVENTS------------------------------------------*/
+
+.events-f{
+       margin-bottom:30px;
+       display: flex;
+       flex-wrap: wrap;
+}
+
+.events-f select, label, input{
+       height: 30px;
+       font-size: 14px;
+} 
+
+.events-f-sort{
+       margin-right:30px;
+       margin-left:0px;
+}
+.events-f-show{
+       margin-right:30px;
+       margin-left:0px;
+}
+.events-f-show input{
+       width:fit-content;
+       max-width: 150px;
+}
+
+.events-f-delete input{
+       width:fit-content;
+       max-width: 150px;
+}
+input{
+       outline: none;
+}
+select{
+       outline: none;
+}
+
+.delete-sub{
+       margin-top:30px;
+}
+
+
+.admin-add-event{
+       margin-left:30px;
+}
+
+.admin-add-event {
+       width:100vw;
+}
+
+/*ADD USER--------------------------------------*/
+#add-user{
+       display: flex;
+       flex-direction: column;
+}
+
+.add-user-container form{
+       display: flex;
+       flex-direction: column;
+}
+
+.add-user-fieldset input{
+       height: 25px;
+}
+/*.add-user-bttns{
+       float: right;
+       margin-right:5px;
+       margin-top:20px;
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+}*/
+
+.add-user-bttns input,button{
+       width: 100px;
+       height: 25px;
+       margin: 5px 0px;
+}
+
+.add-user-container form input{
+       margin-bottom:10px;
+}
+
+.add-user-container form label{
+       margin-bottom:-10px;
+       vertical-align: center;
+
+}
+
+.flex-fieldset{
+       display: flex;
+       flex-direction: column;
+}
+.add-user-container form fieldset{
+       
+       width: 300px;
+       margin:5px;
+}
+
+#stud{
+       display: none;
+}
+.form-content-container{
+       display: flex;
+       flex-direction: row;
+}
+
+.fieldset-width input{
+       width:450px;
+}
+
+
+/*ADD PAYMENT ----------------------------------------*/
+.add-pay-container form{
+       display: flex;
+       flex-direction: column;
+       margin-left:30px;
+}
+
+.add-pay-container label{
+margin-bottom:-10px;
+margin-top:10px;
+font-weight: 400;
+}
+
+.add-pay-container input {
+       width:400px;
+}
+
+.pay-submit-bttn input{
+       float: right;
+       margin-top: 50px;
+}
+.am-dt-container{
+       display: flex;
+       justify-content: space-between;
+}
+.am-dt{
+       display: flex;
+       flex-direction: column;
+}
+
+.ee-table-container{
+       margin-right:30px;
+       margin-left:30px;
+}
+
+.flex-add{
+       display: flex;
+       flex-direction: column;
+}
+
+#add{
+       margin-bottom:3px;
+}
+
+.flex-add button{
+       margin:1px 0px;
+       
+}
